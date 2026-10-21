@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Intern Application Portal</title>
+</head>
+
+<body>
+
+    <h1>Intern Application Portal</h1>
+    <p>Complete the form below to apply for an internship.</p>
+
+    <p>Application Progress:</p>
+
+    <form>
+        <input type="hidden" name="applicationCode" value="INT001">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" minlength="3" maxlength="50" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option>Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" pattern="03[0-9]{9}" placeholder="03XXXXXXXXX" required>
+        <br><br>
+
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" required>
+            <option>Select Qualification</option>
+            <option>Bachelor's Degree</option>
+            <option>Master's Degree</option>
+            <option>Other</option>
+        </select>
+        <br><br>
+
+        <label for="skills">Technical Skills:</label>
+        <input type="text" id="skills" list="skillList" required>
+        <datalist id="skillList">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="React">
+            <option value="Python">
+        </datalist>
+        <br><br>
+
+        <label for="level">Your Skill Level (out of 10):</label>
+        <meter id="level" min="0" max="10" value="6">
+            6 out of 10
+        </meter>
+        <br><br>
+        <progress value="3" max="5">3 out of 5</progress>
+        <br><br>
+
+        <label for="position">Preferred Internship:</label>
+        <select id="position" required>
+            <option>Select Position</option>
+            <option>Frontend Development</option>
+            <option>UI/UX Design</option>
+            <option>Backend Development</option>
+            <option>Artificial Intelligence</option>
+        </select>
+        <br><br>
+
+        <label for="interview">Preferred Interview Date and Time:</label>
+        <input type="datetime-local" id="interview">
+        <br><br>
+
+        <label for="stipend">Expected Monthly Stipend:</label>
+        <input type="number" id="stipend" min="10000" max="100000" step="500">
+        <br><br>
+
+        <label for="portfolio">Portfolio URL:</label>
+        <input type="url" id="portfolio">
+        <br><br>
+
+        <label for="applicationType">Application Type:</label>
+        <input type="text" id="applicationType" value="Internship" readonly>
+        <br><br>
+
+        <label for="seniorPosition">Senior Position:</label>
+        <input type="text" id="seniorPosition" value="Unavailable" disabled>
+        <br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+        <br><br>
+
+        <label for="certificates">Upload Certificates:</label>
+        <input type="file" id="certificates" accept=".pdf,.jpg,.png" multiple>
+        <br><br>
+
+        <p><b>Important:</b> Provide accurate information.</p>
+        <p><i>Attach your updated resume.</i></p>
+        <p><u>Review your information before submitting.</u></p>
+
+        <p><s>Old deadline:</s></p>
+        <p>
+            <del>Old deadline: 15 November.</del>
+            <ins>New deadline: 30 November.</ins>
+        </p>
+
+        <p><sub>subscript</sub>example<sup>superscript</sup></p>
+        <p>Applicant name: <bdi>بلال</bdi></p>
+        <p><bdo dir="rtl">Intern Application</bdo></p>
+
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to the terms and conditions.</label>
+        <br><br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+
+        <p>Image Submit Button:</p>
+        <input type="image" src="submit.jpg" alt="Submit Application" width="100">
+
+    </form>
+
+    <h2>Office Location</h2>
+    <p>Select the marked area on the image.</p>
+
+    <img src="office.jpg" alt="Office location" width="300" usemap="#officeMap">
+    <map name="officeMap">
+        <area shape="rect" coords="50,30,150,100" href="#" alt="Office area">
+    </map>
+
+    <form oninput="x.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" id="num1">
+        +
+        <input type="number" id="num2">
+        =
+        <output name="x" for="num1 num2"></output>
+    </form>
+
+
+    <h2>Canvas Example</h2>
+    <canvas width="300" height="100" style="border: 2px solid black;">
+        Your browser does not support canvas.
+    </canvas>
+
+    <template>
+        <p>Reusable internship application information.</p>
+    </template>
+
+    <noscript>
+        JavaScript is disabled in your browser.
+    </noscript>
+</body>
+
+</html>

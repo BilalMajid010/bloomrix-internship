@@ -31,11 +31,16 @@
             </p>
 
             <figure>
-                <img src="img.jpg" alt="HTML code" width="300">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="img.jpg" type="image/jpeg">
+                    <source media="(min-width: 465px)" srcset="img.png" type="image/png">
+                    <img src="img.jpg" alt="HTML code" width="300">
+                </picture>
                 <figcaption>Introduction to HTML</figcaption>
             </figure>
 
-            <p>Course date: <time datetime="2026-10-19">October 19, 2026</time></p>
+
+            <p>Classes from <time>10:00</time> to <time>21:00</time> every weekday.</p>
         </section>
 
         <section id="lessons">
@@ -149,7 +154,7 @@
     </main>
 
     <footer id="contact">
-        <h2>Contact Information</h2>
+        <h2>Contact </h2>
 
         <address>
             HTML Training Program<br>
