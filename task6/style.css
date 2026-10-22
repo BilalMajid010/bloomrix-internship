@@ -1,0 +1,61 @@
+body {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: antiquewhite !important;
+    background-color: lightgreen;
+    color: darkblue;
+}
+
+h1, p , a, ul, img {
+    border: 2px solid black;
+}
+
+header {
+    background: linear-gradient(to right , lightblue , white);
+}
+
+a{
+    color: blue;
+}
+
+a{
+    color: green;
+}
+
+a:visited{
+    color: purple;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: square;
+    list-style-position: inside;
+    /* list-style-image: url("https://png.pngtree.com/png-vector/20220905/ourmid/pngtree-red-christmas-star-vector-icon-on-white-background-vector-png-image_48517174.jpg"); */
+}
+
+label, textarea, button {
+    text-transform: uppercase;
+    border: 3px solid brown;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+div h2 + p {
+    font-family: Courier;
+}
+
+div h2 ~ p {
+    color: green;
+}
+
+
+
