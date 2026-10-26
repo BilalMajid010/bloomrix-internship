@@ -7,7 +7,20 @@ body {
     color: darkblue;
 }
 
-h1, p , a, ul, img {
+h1{
+    text-decoration: underline;
+}
+
+p {
+ font-style: italic;
+}
+
+ul, img {
+    width: 15vw;
+    height: 20vh;
+}
+
+ul {
     border: 2px solid black;
 }
 
@@ -16,23 +29,25 @@ header {
 }
 
 a{
-    color: blue;
+    color: green;
 }
 
 a{
-    color: green;
+    color: blue;
+}
+
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 a:visited{
     color: purple;
 }
 
-a:hover {
-    cursor: pointer;
-}
-
 a:active{
-    text-decoration: none;
+    color: red;
 }
 
 .list {
@@ -55,6 +70,14 @@ div h2 + p {
 
 div h2 ~ p {
     color: green;
+}
+
+#skilledu h3{
+    color: red;
+}
+
+#skilledu > h3{
+    color: purple;
 }
 
 

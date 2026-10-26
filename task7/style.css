@@ -1,0 +1,328 @@
+.first {
+    box-sizing: content-box;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    width : 50%;
+    height : 20vh;
+    min-width : 30%;
+    max-width : 55%;
+    min-height : 10vh;
+    max-height : 30vh;
+}
+
+.second {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    width : 50%;
+    height : 20vh;
+    min-width : 30%;
+    max-width : 55%;
+    min-height : 10vh;
+    max-height : 30vh;
+}
+
+.third {
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    border: 2px solid brown;
+}
+
+.fourth {
+    margin : 10px 15px 20px 20px;
+    border : 2px solid brown;
+}
+
+.fifth {
+    margin : 10px;
+    border : 2px solid brown;
+}
+
+.sixth {
+    margin : 10px 15px;
+    border : 2px solid brown;
+}
+
+.seventh {
+    margin : 10px 15px 20px;
+    border : 2px solid brown;
+}
+
+.eighth {
+    margin : 0px auto;
+    border : 2px solid brown;
+}
+
+.ninth {
+    margin-top : -20px;
+    border : 2px solid brown;
+}
+
+.tenth {
+    border : 2px solid brown;
+}
+
+.tenth h2 {
+    margin-bottom : 20px;
+    border : 2px solid brown;
+}
+
+.tenth p {
+    margin-top : 10px;
+    border : 2px solid brown;
+}
+
+.display .block h2 {
+    display: block;
+    border : 2px solid brown;
+}
+
+.display .inline h3 {
+    display: inline;
+    width: 40px;
+    height: 30px;
+    border : 2px solid brown;
+}
+
+.display .inline-block h4 {
+    display: inline-block;
+    width: 10%;
+    height: 30px;
+    border : 2px solid brown;
+}
+
+.display .none h4 {
+    display: none;
+    border : 2px solid brown;
+}
+
+.table {
+  display: table;
+  border-collapse: collapse;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.visibility h1 {
+    display: none;
+}
+
+.visibility h2 {
+    visibility: hidden;
+}
+
+.visibility h3 {
+    opacity: 0;
+}
+
+.overflow .visible {
+    width: 30%;
+    height: 20vh;
+    border: 2px solid black;
+    margin-bottom: 100px;
+    overflow: visible;
+}
+
+.overflow .hidden {
+    width: 30%;
+    height: 20vh;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border: 2px solid black;
+}
+
+.overflow .scroll {
+    overflow: scroll;
+    width: 30%;
+    height: 20vh;
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.overflow .auto {
+    overflow: auto;
+    width: 30%;
+    height: 20vh;
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.overflow .xy-overflow {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 30%;
+    height: 20vh;
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+
+/* .overflow .overflow-wrap {
+    overflow: break-word;
+    width: 30%;
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.overflow .word-break {
+    overflow: break-all;
+    border: 2px solid black;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.overflow .text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 2px solid black;
+    width: 30%;
+    margin-bottom: 40px;
+} */
+
+.position {
+    position: relative;
+    border: 2px solid black;
+}
+
+.position .static {
+    position: static;
+    top: 100px;
+    border: 1px solid black;
+    margin: 10px;    
+}
+
+.position .sticky {
+    position: sticky;
+    bottom: 30px;
+    border: 1px solid black;   
+    margin: 10px;    
+}
+
+.position .relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    border: 1px solid black;   
+    margin: 10px;    
+}
+
+.position .absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;  
+    margin: 10px;    
+}
+
+.position .fixed {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    border: 1px solid black;   
+    margin: 10px;    
+}
+
+.z-index {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.z-index .one {
+    position: absolute;
+    z-index: 1;
+    background-color: aqua;
+}
+
+.z-index .two {
+    position: absolute;
+    z-index: 2;
+    background-color: blueviolet;
+}
+
+.z-index .three {
+    position: absolute;
+    z-index: 3;
+    background-color: crimson;
+}
+
+a {
+    padding: 100px;
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+    color: lightskyblue;
+}
+
+button:focus {
+  background-color: black;
+  color: white;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: blue;
+}
+
+li:nth-child(2) {
+    color: green;
+}
+
+/* p:not(.select-child) {
+    text-decoration: underline;
+} */
+
+.select-child p::before {
+    content: "Before: ";
+    font-size: 30px;
+    color: red;
+}
+
+.select-child p::after {
+    content: " After";
+    font-size: 30px;
+    color: blue;
+}
+
+.select-child p::first-letter {
+    font-size: 30px;
+    color: goldenrod;
+}
+
+.select-child p::first-line {
+    font-weight: bold;
+}
+
+.select-child ::selection {
+    background-color: gold;
+    color: br;
+}
+
+
